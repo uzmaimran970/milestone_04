@@ -1,0 +1,139 @@
+/* General Body Styling */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #92c0f8;
+    margin: 0;
+    padding: 0;
+    width: 60vw;
+    max-width: 70vw;
+    margin-left: 15vw; /* To center the container */
+  }
+  
+
+/* Main Container */
+.container {
+    width: 60vw;
+    max-width: 60vw;
+    flex-basis: 60vw;
+    padding: 30px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 15px;
+    transition: width 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+
+/* Form and Resume Styling */
+.form-container, .resume-container {
+    padding: 25px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 15px;
+    color: #444;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Input Fields */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Input Field Hover and Focus Effects */
+input:hover, textarea:hover {
+    background-color: #94c6f1; /* Light blue background on hover */
+}
+
+input:focus, textarea:focus {
+    border-color: #b9c6cf;
+    outline: none;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button Styling */
+button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #1453b1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Button Hover and Active Effects */
+button:hover {
+    background-color: #1f32dd;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+button:active {
+    background-color: black;
+    transform: scale(1.02);
+}
+
+/* Heading Styles */
+h2 {
+    color: #333;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: black;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Generated Resume Text Styling */
+.resume-container p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+
+}
+.resume-container p:hover{
+    background-color: #9ecaf1;
+}
+
+/* Placeholder Styling for Inputs */
+input::placeholder, textarea::placeholder {
+    color: #bbb;
+}
+
+/* Generated Resume Box Shadow */
+.resume-container {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.resume-container:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Form Container for Editing -->
+<div class="form-container" id="formContainer">
+    <h2>Create your Resume</h2>
+    <form id="resumeForm">
+        <!-- Personal Information -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required>
+
+
+        <!-- Education -->
+        <label for="education">Education:</label>
+        <textarea id="education" name="education" rows="2" required></textarea>
+
+        <!-- Skills -->
+        <label for="skills">Skills:</label>
+        <textarea id="skills" name="skills" rows="2" required></textarea>
+
+        
+        <!-- experience -->
+        <label for="experience">Experience:</label>
+        <textarea id="experience" name="experience" rows="2" required></textarea>
+
+        
+
+
+        <!-- Save/Edit Button -->
+        <button type="button" id="toggleButton">Save</button>
+    </form>
+</div>
+
+<!-- Display the Generated Resume -->
+<div class="resume-container" id="resumeContainer" style="display: none;">
+    <h2>Resume</h2>
+    <div id="resumeContent"></div>
+    <button type="button" id="editButton">Edit</button>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
